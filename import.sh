@@ -1,4 +1,6 @@
 #!/bin/bash
+source /secrets/aws.env
+
 HOST=$1
 if [ -z "${HOST}" ]; then
   echo "usage: $0 <postgres hostname> [backup file]"
